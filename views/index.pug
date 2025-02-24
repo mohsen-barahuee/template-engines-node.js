@@ -2,31 +2,18 @@ html(lang='en')
     head 
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width , initial-scale=1.0')
+        link(rel="stylesheet", href="/static/css/style.css")
         title Document
-        style.
-            .title{
-                color : green;
-            }
-            .header{
-                font-size:64px;
-            }
-            
-            .btn{
-                background-color:green;
-                color : white;
-                border : 0px }
-
-            #username{
-                outline : none;
-                width: 200px;
-            }
-
-
+        
     body 
         h1.title.header This is template engine test
-        p this p tag
+        p(style="color:purple") This is P Tag
+        hr
+        a(href='https://google.com' target='_blank') Google 
+        hr
         form 
-            input#username
+            input.username(placeholder="Username...." type='text')
+            input.username(placeholder="password...." type='password')
             button.btn Login
 
 
