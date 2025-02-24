@@ -1,3 +1,7 @@
+body {
+  direction: rtl;
+}
+
 .title {
   color: green;
 }

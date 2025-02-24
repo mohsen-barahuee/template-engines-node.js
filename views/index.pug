@@ -6,6 +6,8 @@ html(lang='en')
         title Document
         
     body 
+        - const person = {id : 1,username : "Mohse_brh" , age : 23}
+        h1 id:#{person.id} |-| UserName:#{person.username} |-| Age:#{person.age}
         h1.title.header This is template engine test
         p(style="color:purple") This is P Tag
         hr
